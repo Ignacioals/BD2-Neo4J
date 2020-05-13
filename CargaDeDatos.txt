@@ -1,0 +1,123 @@
+//edificios
+Create(al1:Edificio{name:"Alameda",direccion:"Pueyrredon 367"}),
+(rl2:Edificio{name:"Rosedal",direccion:"Av Santa Fe 1568"}),
+(tm3:Edificio{name:"Treboles del Mar",direccion:"Av Santa Fe 963"}),
+(lm4:Edificio{name:"Lomas",direccion:"Larrea 158"}),
+(ps5:Edificio{name:"Posadas",direccion:"Posadas 1506"})
+
+//unidades
+//unidades edificio1
+create(unoE1:Unidad{name:"Unidad1 Edificio1",estado:"Alquilado",expensas:18000}),
+(dosE1:Unidad{name:"Unidad2 Edificio1",estado:"No alquilado",expensas:22000}),
+(tresE1:Unidad{name:"Unidad3 Edificio1",estado:"No alquilado",expensas:18000}),
+(cuatroE1:Unidad{name:"Unidad4 Edificio1",estado:"No alquilado",expensas:25000})
+//unidades edificio2
+create(unoE2:Unidad{name:"Unidad1 Edificio2",estado:"No alquilado",expensas:30000}),
+(dosE2:Unidad{name:"Unidad2 Edificio2",estado:"No alquilado",expensas:30000}),
+(tresE2:Unidad{name:"Unidad3 Edificio2",estado:"No alquilado",expensas:32000}),
+(cuatroE2:Unidad{name:"Unidad4 Edificio2",estado:"Alquilado",expensas:25000}),
+(cincoE2:Unidad{name:"Unidad5 Edificio2",estado:"Alquilado",expensas:37000})
+//unidades edificio3
+create(unoE3:Unidad{name:"Unidad1 Edificio3",estado:"No alquilado",expensas:15000}),
+(dosE3:Unidad{name:"Unidad2 Edificio3",estado:"No alquilado",expensas:17000}),
+(tresE3:Unidad{name:"Unidad3 Edificio3",estado:"Alquilado",expensas:18000}),
+(cuatroE3:Unidad{name:"Unidad4 Edificio3",estado:"No alquilado",expensas:19000}),
+(cincoE3:Unidad{name:"Unidad5 Edificio3",estado:"Alquilado",expensas:13000}),
+(seisE3:Unidad{name:"Unidad6 Edificio3",estado:"Alquilado",expensas:14000})
+//unidades edificio4
+create(unoE4:Unidad{name:"Unidad1 Edificio4",estado:"No alquilado",expensas:16000}),
+(dosE4:Unidad{name:"Unidad2 Edificio4",estado:"Alquilado",expensas:22000}),
+(tresE4:Unidad{name:"Unidad3 Edificio4",estado:"Alquilado",expensas:23000}),
+(cuatroE4:Unidad{name:"Unidad4 Edificio4",estado:"No alquilado",expensas:16000})
+//unidades edificio5
+create(unoE5:Unidad{name:"Unidad1 Edificio5",estado:"No alquilado",expensas:17000}),
+(dosE5:Unidad{name:"Unidad2 Edificio5",estado:"No alquilado",expensas:18000}),
+(tresE5:Unidad{name:"Unidad3 Edificio5",estado:"Alquilado",expensas:19000}),
+(cuatroE5:Unidad{name:"Unidad4 Edificio5",estado:"No alquilado",expensas:23000}),
+(cincoE5:Unidad{name:"Unidad5 Edificio5",estado:"No alquilado",expensas:26000}),
+(seisE5:Unidad{name:"Unidad6 Edificio5",estado:"No alquilado",expensas:27000}),
+(sieteE5:Unidad{name:"Unidad7 Edificio5",estado:"No alquilado",expensas:15000}),
+(ochoE5:Unidad{name:"Unidad8 Edificio5",estado:"Alquilado",expensas:17000}),
+(nueveE5:Unidad{name:"Unidad9 Edificio5",estado:"No alquilado",expensas:30000}),
+(diezE5:Unidad{name:"Unidad10 Edificio5",estado:"No alquilado",expensas:31000})
+
+//Dueños
+Create(CY:Duenio{name:"Charly",apellido:"Marquez",documento:"41235689"}),
+(RO:Duenio{name:"Roberto",apellido:"Pools",documento:"41235429"}),
+(CS:Duenio{name:"Carlos",apellido:"Lorda",documento:"41232389"}),
+(FO:Duenio{name:"Federico",apellido:"Martinez",documento:"41235309"}),
+(MO:Duenio{name:"Manolo",apellido:"Rosas",documento:"41241989"}),
+(ML:Duenio{name:"Mario",apellido:"Lopez",documento:"41765689"}),
+(LS:Duenio{name:"Lucas",apellido:"Sanchez",documento:"41248589"}),
+(KF:Duenio{name:"Kenny",apellido:"Flores",documento:"41369489"}),
+(JF:Duenio{name:"Juan",apellido:"Fernandez",documento:"43785689"}),
+(NP:Duenio{name:"Nacho",apellido:"Perez",documento:"42368956"})
+
+//Inquilinos
+Create(PP:Arrendatario{name:"Carlos",apellido:"Perez",documento:"45266983",garante:"Marcos Lopez"}),
+(PL:Arrendatario{name:"Paula",apellido:"Lanata",documento:"45215373",garante:"Luciano  Garcia"}),
+(LF:Arrendatario{name:"Lorena",apellido:"Fausto",documento:"45247983",garante:"Lucia Martinez"}),
+(PR:Arrendatario{name:"Poli",apellido:"Ramirez",documento:"45307843",garante:"Lucia Lopez"}),
+(TG:Arrendatario{name:"Tomas",apellido:"Galea",documento:"416274693",garante:"Lucia Martinez"}),
+(LP:Arrendatario{name:"Lucas",apellido:"Ponzio",documento:"37895146",garante:"Lorda Martin"}),
+(VM:Arrendatario{name:"Valentin",apellido:"Miguez",documento:"45607138",garante:"Luciano Auad"}),
+(FL:Arrendatario{name:"Federico",apellido:"Lupo",documento:"36180346",garante:"Pablo Rashid"}),
+(LM:Arrendatario{name:"Lautaro",apellido:"Masserati",documento:"47802365",garante:"Lucas Perez"}),
+(JA:Arrendatario{name:"Juan",apellido:"Acebal",documento:"49324578",garante:"Maria Lorda"})
+
+//Relacionar edificio con sus unidades
+Create
+(al1)-[:Tiene]->(unoE1),(al1)-[:Tiene]->(dosE1),(al1)-[:Tiene]->(tresE1),(al1)-[:Tiene]->(cuatroE1),
+(rl2)-[:Tiene]->(unoE2),(rl2)-[:Tiene]->(dosE2),(rl2)-[:Tiene]->(tresE2),(rl2)-[:Tiene]->(cuatroE2),(rl2)-[:Tiene]->(cincoE2),
+(tm3)-[:Tiene]->(unoE3),(tm3)-[:Tiene]->(dosE3),(tm3)-[:Tiene]->(tresE3),(tm3)-[:Tiene]->(cuatroE3),(tm3)-[:Tiene]->(cincoE3),(tm3)-[:Tiene]->(seisE3),
+(lm4)-[:Tiene]->(unoE4),(lm4)-[:Tiene]->(dosE4),(lm4)-[:Tiene]->(tresE4),(lm4)-[:Tiene]->(cuatroE4),
+(ps5)-[:Tiene]->(unoE5),(ps5)-[:Tiene]->(dosE5),(ps5)-[:Tiene]->(tresE5),(ps5)-[:Tiene]->(cuatroE5),(ps5)-[:Tiene]->(cincoE5),(ps5)-[:Tiene]->(seisE5),(ps5)-[:Tiene]->(sieteE5),(ps5)-[:Tiene]->(ochoE5),(ps5)-[:Tiene]->(nueveE5),(ps5)-[:Tiene]->(diezE5),
+
+//Relacionar dueños con sus unidades
+(unoE1)-[d1:Propietario]->(CY),(dosE1)-[d11:Propietario]->(CY),(tresE1)-[d12:Propietario]->(CY),(cuatroE1)-[d13:Propietario]->(CY),(unoE2)-[d21:Propietario]->(RO),(dosE2)-[d22:Propietario]->(RO),(tresE2)-[d23:Propietario]->(RO),(cuatroE2)-[d2:Propietario]->(RO),(cincoE2)-[d3:Propietario]->(CS),(unoE3)-[d41:Propietario]->(FO),(dosE3)-[d42:Propietario]->(FO),(tresE3)-[d4:Propietario]->(FO),(cuatroE3)-[d43:Propietario]->(FO),(cincoE3)-[d5:Propietario]->(MO),(seisE3)-[d6:Propietario]->(ML),(dosE4)-[d7:Propietario]->(LS),(unoE4)-[d71:Propietario]->(LS),(tresE4)-[d8:Propietario]->(KF),(cuatroE4)-[d78:Propietario]->(LS),(unoE5)-[d91:Propietario]->(JF),(dosE5)-[d92:Propietario]->(JF),(tresE5)-[d9:Propietario]->(JF),(cuatroE5)-[d93:Propietario]->(JF),(cincoE5)-[d94:Propietario]->(JF),(seisE5)-[d95:Propietario]->(JF),(sieteE5)-[d96:Propietario]->(JF),(ochoE5)-[d10:Propietario]->(NP),(nueveE5)-[d97:Propietario]->(JF),(diezE5)-[d98:Propietario]->(JF),
+
+//Relacionar inquilino con su unidad
+(unoE1)-[a1:Alquilado_Por]->(PP),(cuatroE2)-[a2:Alquilado_Por]->(PL),(cincoE2)-[a3:Alquilado_Por]->(LF),(tresE3)-[a4:Alquilado_Por]->(PR),(cincoE3)-[a5:Alquilado_Por]->(TG),(seisE3)-[a6:Alquilado_Por]->(LP),(dosE4)-[a7:Alquilado_Por]->(VM),(tresE4)-[a8:Alquilado_Por]->(FL),(tresE5)-[a9:Alquilado_Por]->(LM),(ochoE5)-[a10:Alquilado_Por]->(JA)
+
+//Fechas de compra de unidades
+Set d1.since=date("2013-11-05"),
+d11.since=date("2014-02-05"),
+d12.since=date("2013-08-05"),
+d13.since=date("2007-11-05"),
+d2.since=date("2012-12-12"),
+d21.since=date("2002-12-06"),
+d22.since=date("2003-12-02"),
+d23.since=date("2012-12-12"),
+d3.since=date("2010-10-12"),
+d4.since=date("2014-12-26"),
+d41.since=date("2016-12-26"),
+d42.since=date("2017-12-26"),
+d43.since=date("2010-12-26"),
+d5.since=date("2018-12-10"),
+d6.since=date("2017-06-14"),
+d7.since=date("2006-04-15"),
+d71.since=date("2016-04-15"),
+d78.since=date("2007-12-15"),
+d8.since=date("2017-01-07"),
+d91.since=date("2014-08-17"),
+d92.since=date("2004-06-17"),
+d93.since=date("2013-06-17"),
+d94.since=date("1995-06-17"),
+d95.since=date("1998-06-17"),
+d96.since=date("2000-06-17"),
+d97.since=date("2001-06-17"),
+d98.since=date("2017-06-17"),
+d9.since=date("2016-06-17"),
+d10.since=date("2011-04-20"),
+
+//Fecha de inicio de alquiler e importe
+a1.since=date("2019-05-12"),a1.importe="$40000",
+a2.since=date("2019-05-14"),a1.importe="$41000",
+a3.since=date("2019-04-14"),a1.importe="$42000",
+a4.since=date("2019-06-14"),a1.importe="$36000",
+a5.since=date("2019-07-14"),a1.importe="$30000",
+a6.since=date("2019-05-20"),a1.importe="$32000",
+a7.since=date("2019-09-14"),a1.importe="$43000",
+a8.since=date("2019-02-14"),a1.importe="$44000",
+a9.since=date("2019-03-15"),a1.importe="$31000",
+a10.since=date("2019-01-30"),a1.importe="$35000"
